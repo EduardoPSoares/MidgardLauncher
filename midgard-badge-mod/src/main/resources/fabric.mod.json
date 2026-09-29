@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "midgard-badge",
+  "version": "1.0.0",
+  "name": "Midgard Badge",
+  "description": "Shows a badge next to Midgard Launcher users in the tab list",
+  "authors": ["MidgardRP"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["net.midgardrp.badge.MidgardBadgeClient"]
+  },
+  "mixins": ["midgard-badge.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21"
+  }
+}

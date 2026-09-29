@@ -1,0 +1,94 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-In6B8teKZQll5heMl9bS7CESTbGvuAt3VVV86BUQBDk='; media-src 'self' data: blob:; img-src 'self' data: blob: https://mc-heads.net"/>
+    <title><%= lang('app.title') %></title>
+    <script src="./assets/js/scripts/uicore.js"></script>
+    <script src="./assets/js/scripts/uibinder.js"></script>
+    <link type="text/css" rel="stylesheet" href="./assets/css/launcher.css">
+    <style>
+        body {
+            /*background: url('assets/images/backgrounds/<%=bkid%>.png') no-repeat center center fixed;*/
+            background: #171614;
+            -webkit-user-select: none;
+        }
+        #main {
+            display: none;
+            height: calc(100% - 22px);
+            background: linear-gradient(to top, rgba(10, 6, 2, 0.75) 0%, rgba(10, 6, 2, 0) 60%);
+            width: 100%;
+            position: absolute;
+            z-index: 10;
+        }
+        #main[overlay] {
+            filter: blur(3px) contrast(0.9) brightness(1.0);
+        }
+    </style>
+</head>
+<body bkid="<%=bkid%>" bgcount="<%=bgcount%>">
+    <div id="bgLayer" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;background-size:cover;background-position:center center;background-repeat:no-repeat;transition:opacity 0.8s ease;"></div>
+    <div id="bgLayerNext" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;background-size:cover;background-position:center center;background-repeat:no-repeat;opacity:0;transition:opacity 0.8s ease;"></div>
+    <%- include('frame') %>
+    <div id="main">
+        <%- include('welcome') %>
+        <%- include('login') %>
+        <%- include('waiting') %>
+        <%- include('loginOptions') %>
+        <%- include('settings') %>
+        <%- include('landing') %>
+    </div>
+    <%- include('overlay') %>
+    <div id="updateOverlay" style="display: none;">
+        <div id="updateOverlayContent">
+            <img id="updateOverlayLogo" src="assets/images/SealCircle.png"/>
+            <div id="updateOverlayTitle">Atualizando o Launcher</div>
+            <div id="updateOverlaySubtitle">Aguarde enquanto a nova versão é instalada...</div>
+            <div id="updateProgressContainer">
+                <div id="updateProgressBar"></div>
+            </div>
+            <div id="updateProgressText">0%</div>
+        </div>
+    </div>
+    <div id="loadingContainer">
+        <div id="loadingContent">
+            <div id="loadSpinnerContainer">
+                <img id="loadCenterImage" src="assets/images/Midgard.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- Accessibility Prompt -->
+    <div id="accessibilityPrompt" style="display: none;">
+        <div id="accessibilityPromptContent">
+            <svg id="accessibilityIcon" viewBox="0 0 24 24" width="48" height="48">
+                <path fill="currentColor" d="M12 3.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM5 21.5l1-1v-8l-3.18.96-.32-1.96L6.5 10h11l4 1.5-.32 1.96L18 12.5v8l1 1h-2l-1.5-3h-7L7 21.5H5zm4.5-5h5l.5-1v-3H9v3l.5 1z"/>
+            </svg>
+            <span id="accessibilityPromptTitle"><%= lang('accessibility.title') %></span>
+            <span id="accessibilityPromptDesc"><%= lang('accessibility.description') %></span>
+            <div id="accessibilityPromptActions">
+                <button id="accessibilityYes" class="accessibilityBtn"><%= lang('accessibility.yes') %></button>
+                <button id="accessibilityNo" class="accessibilityBtn accessibilityBtnSecondary"><%= lang('accessibility.no') %></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Performance Prompt -->
+    <div id="performancePrompt" style="display: none;">
+        <div id="performancePromptContent">
+            <svg id="performanceIcon" viewBox="0 0 24 24" width="48" height="48">
+                <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+            </svg>
+            <span id="performancePromptTitle"><%= lang('performance.title') %></span>
+            <span id="performancePromptDesc"><%= lang('performance.description') %></span>
+            <div id="performancePromptActions">
+                <button id="performanceHigh" class="performanceBtn performanceBtnHigh"><%= lang('performance.high') %></button>
+                <button id="performanceMedium" class="performanceBtn performanceBtnMedium"><%= lang('performance.medium') %></button>
+                <button id="performanceLow" class="performanceBtn performanceBtnLow"><%= lang('performance.low') %></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop></audio>
+</body>
+</html>

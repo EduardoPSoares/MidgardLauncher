@@ -1,0 +1,20 @@
+# Custom Language File for Midgard Launcher
+
+[ejs.app]
+title = "Midgard Launcher"
+
+[ejs.landing]
+mediaGitHubURL = "#"
+mediaTwitterURL = "#"
+mediaInstagramURL = "#"
+mediaYouTubeURL = "https://www.youtube.com/@MidgardRP-w2n"
+mediaDiscordURL = "https://discord.gg/midgardrpg"
+
+[ejs.settings]
+sourceGithubLink = "https://github.com/MidgardNetwork/MidgardLauncher"
+supportLink = "https://discord.gg/midgardrpg"
+
+[ejs.welcome]
+welcomeHeader = "BEM-VINDO AO MIDGARD"
+welcomeDescription = "Entre no mundo de Midgard, um servidor de Minecraft onde aventuras epicas aguardam! Explore terras vastas, construa imperios, batalhe contra inimigos e faca parte de uma comunidade incrivel. Toda a configuracao de mods e atualizacoes e feita automaticamente pelo launcher."
+welcomeDescCTA = "Voce esta a poucos cliques de Midgard."
