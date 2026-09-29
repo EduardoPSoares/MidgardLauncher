@@ -1,0 +1,11 @@
+{
+  "$schema": "../schemas/DistroMetaSchema.schema.json",
+  "meta": {
+    "rss": "",
+    "discord": {
+      "clientId": "891253756862271510",
+      "smallImageText": "MidgardRP",
+      "smallImageKey": "seal-circle"
+    }
+  }
+}

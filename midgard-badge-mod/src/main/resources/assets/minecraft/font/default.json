@@ -1,0 +1,13 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "midgardbadge:font/midgard_icon.png",
+      "ascent": 8,
+      "height": 10,
+      "chars": [
+        "\uE100"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+appId: 'midgardlauncher'
+productName: 'Midgard Launcher'
+artifactName: 'Midgard-Launcher-setup-${version}.${ext}'
+
+copyright: 'Copyright © 2026 Midgard Team'
+
+asar: true
+compression: 'maximum'
+
+files:
+  - '**/*'
+  - '!{dist,.gitignore,.vscode,docs,dev-app-update.yml,.nvmrc,.eslintrc.json}'
+  - '!{repo,servers,schemas,meta,scripts,MidgardBot,Imagens Launcher}'
+  - '!{sounds,CHANGELOG.md,README.md,LICENSE.txt,news.json,.github}'
+  - '!distribution.json'
+  - '!app/assets/images/backgrounds'
+
+extraResources:
+  - 'libraries'
+
+# Windows Configuration
+win: 
+  target: 
+    - target: 'nsis'
+      arch: 'x64'
+
+# Windows Installer Configuration
+nsis:
+  oneClick: false
+  perMachine: false
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+
+# macOS Configuration
+mac:
+  target:
+    - target: 'dmg'
+      arch:
+        - 'x64'
+        - 'arm64'
+  artifactName: '${productName}-setup-${version}-${arch}.${ext}'
+  category: 'public.app-category.games'
+
+# Linux Configuration
+linux: 
+  target: 'AppImage'
+  maintainer: 'Midgard Team'
+  vendor: 'Midgard Team'
+  synopsis: 'Midgard Minecraft Launcher'
+  description: 'Launcher oficial do servidor Midgard. Todos os mods, configurações e atualizações são gerenciados automaticamente.'
+  category: 'Game'
+  icon: 'build/icon.png'
+  artifactName: 'Midgard-Launcher-${version}-${arch}.${ext}'
+
+
+directories:
+  buildResources: 'build'
+  output: 'dist'
+
+# Auto-update from GitHub Releases
+publish:
+  - provider: github
+    owner: MidgardNetwork
+    repo: MidgardLauncher
+    private: true

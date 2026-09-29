@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "midgard-skiprp",
+  "version": "1.0.0",
+  "name": "Midgard Skip Server ResourcePack",
+  "description": "Skips server resource pack reload since the launcher already provides it locally",
+  "authors": ["MidgardRP"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {},
+  "mixins": ["midgard-skiprp.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21"
+  }
+}

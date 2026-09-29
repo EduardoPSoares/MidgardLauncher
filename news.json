@@ -1,0 +1,25 @@
+{
+  "articles": [
+    {
+      "title": "Bem vindo",
+      "content": "Saudações, Despertados. Sejam bem-vindos ao novo launcher. É aqui que os ecos de Midgard ganham forma atualizações do servidor, avanços da lore e segredos que começam a se revelar. Observem bem… pois, em breve, talvez sejam os vossos próprios nomes que apareçam gravados aqui.",
+      "author": "chavany_chan",
+      "category": "lore",
+      "date": "03 de março de 2026, 17:26"
+    },
+    {
+      "title": "Lançamento do Client",
+      "content": "Olá todos vocês, tudo bem?\n\nHoje é um passo importante pra comunidade inteira. O nosso launcher já está disponível, feito pensando em cada um de vocês que faz parte disso tudo, desde quem chegou agora até quem está com a gente há muito tempo. Somo imensos gratos por isso tudo.\n\nEle vem para unificar tudo. Um só lugar, um só acesso, uma experiência mais organizada, mais estável e preparada para crescer. As melhorias não param aqui, isso é só o começo de uma nova fase para todos nós.\n\nSe algo precisar ser ajustado, vamos ajustar. Se tiver sugestão, vamos ouvir. Esse projeto não é de uma pessoa só, é de todos vocês. Cada jogador faz parte dessa construção\n\nObrigado por estarem aqui. De verdade\nAgora é a nossa vez de evoluir juntos ❤️",
+      "author": "rayziinx",
+      "category": "noticias",
+      "date": "03 de março de 2026, 00:40"
+    },
+    {
+      "title": "teste",
+      "content": "123123123123123",
+      "author": "rayziinx",
+      "category": "changelogs",
+      "date": "28 de fevereiro de 2026, 17:24"
+    }
+  ]
+}

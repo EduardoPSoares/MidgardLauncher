@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "net.midgardrp.skiprp.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "SkipServerResourcePackMixin",
+    "ProtectResourcePackMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
