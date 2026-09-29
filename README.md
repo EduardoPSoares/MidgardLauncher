@@ -1,5 +1,10 @@
 # MidgardLauncher
 
+![Electron](https://img.shields.io/badge/Electron-47848F?logo=electron&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-5FA04E?logo=nodedotjs&logoColor=white)
+![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white)
+![License](https://img.shields.io/github/license/EduardoPSoares/MidgardLauncher)
+
 Launcher desktop (Electron) do servidor Minecraft Midgard: login Microsoft, download e verificação dos arquivos
 do jogo, atualização automática e notícias.
 
