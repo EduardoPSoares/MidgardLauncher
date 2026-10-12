@@ -1,7 +1,7 @@
 // NOTE FOR THIRD-PARTY
 // REPLACE THIS CLIENT ID WITH YOUR APPLICATION ID.
 // SEE https://github.com/MidgardNetwork/MidgardLauncher/blob/main/docs/MicrosoftAuth.md
-exports.AZURE_CLIENT_ID = '70e8d668-e1bd-4d36-824a-7bac26d6a642'
+exports.AZURE_CLIENT_ID = 'SEU_CLIENT_ID_AQUI'
 // SEE NOTE ABOVE.
 
 
